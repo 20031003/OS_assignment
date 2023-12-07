@@ -1,0 +1,125 @@
+.parent{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    max-height: 10vh;
+    min-height: 90vh;
+    align-items: center
+}
+
+.first {
+    padding: 10rem;
+    border-radius: 1rem;
+    border: 1px solid red;
+
+    animation-name: in1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+.first:hover {
+    padding: 10rem;
+    border-radius: 1rem;
+    border: 1px solid red;
+
+    animation-name: out1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+.second{
+    border: 1px solid green;
+    margin: 0px 5%;
+    padding: 10rem;
+    border-radius: 1rem;
+
+    animation-name: in2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+.second:hover{
+    border: 1px solid green;
+    margin: 0px 5%;
+    padding: 10rem;
+    border-radius: 1rem;
+
+    animation-name: out2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+.third{
+    padding: 10rem;
+    border-radius: 1rem;
+    border: 1px solid blue;
+
+    animation-name: in3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+.third:hover{
+    padding: 10rem;
+    border-radius: 1rem;
+    border: 1px solid blue;
+
+    animation-name: out3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+
+@keyframes in1 {
+    0%   {background-image: url("esv_e.png")}
+
+    100% {background-image: url("esv_i.png")}
+}
+@keyframes out1 {
+    0%   {background-image: url("esv_i.png")}
+
+    100% {background-image: url("esv_e.png")}
+}
+
+
+@keyframes in2 {
+    0%   {background-image: url("tetris_e.png")}
+
+    100% {background-image: url("tetris_i.png")}
+}
+@keyframes out2 {
+    0%   {background-image: url("tetris_i.png")}
+
+    100% {background-image: url("tetris_e.png")}
+}
+
+
+@keyframes in3 {
+    0%   {background-image: url("hangman_e.png")}
+
+    100% {background-image: url("hangman_i.png")}
+}
+@keyframes out3 {
+    0%   {background-image: url("hangman_i.png")}
+
+    100% {background-image: url("hangman_e.png")}
+}
