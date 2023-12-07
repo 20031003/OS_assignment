@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="~{layouts/header :: header}"></div>
+
+<div th:replace="~{layouts/nav :: nav}"></div>
+
+
+<form action="/signUp" th:action="@{/signUp}" th:object="${userDto}" method="post">
+
+    <div class="w-50 mx-auto  bg-light" style="border-radius: 10px; margin-top: 100px">
+        <div class="p-5">
+            <h2 class="p-1">회원가입</h2>
+
+            <div class="mb-3">
+                <input class="form-control" type="email" placeholder="email" th:field="*{email}" name="email">
+                <small class="form-text" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small>
+            </div>
+
+            <div class="mb-3">
+                <input class="form-control" type="text" placeholder="username" th:field="*{username}" name="username">
+                <small class="form-text" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></small>
+            </div>
+
+            <div class="mb-3">
+                <input class="form-control" type="password" placeholder="Password" th:field="*{password}"
+                       name="password">
+                <small class="form-text" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></small>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </div>
+
+
+</form>
+
+<div th:replace="~{layouts/footer :: footer}"></div>
