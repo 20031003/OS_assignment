@@ -1,5 +1,6 @@
 package com.example.security_test.controller;
 
+import com.example.security_test.dto.UserDto;
 import com.example.security_test.entity.UserEntity;
 import com.example.security_test.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -36,5 +37,11 @@ public class IndexController {
         return "loginForm";
     }
 
+    @GetMapping("/signUpForm") //회원가입 데이터를 받는 폼
+    public String signUpForm(Model model) {
+        model.addAttribute("userDto", new UserDto());
+
+        return "signUpForm";
+    }
 
 }
