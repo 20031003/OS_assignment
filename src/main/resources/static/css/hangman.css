@@ -1,0 +1,106 @@
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: palevioletred;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+section {
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30pxs;
+
+}
+
+.subTitle {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.subjects {
+    font-size: 25px;
+    color: orangered;
+    font-weight: 700;
+}
+
+
+#alphabet {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#alphabet li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 5px 5px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#alphabet li:hover,
+#alphabet li.active {
+    background: yellowgreen;
+    color: blueviolet;
+}
+
+canvas {
+    border: 1px dashed #ddd;
+    margin-bottom: 15px;
+}
+
+#categoryName {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#my-word {
+    display: flex;
+    justify-content: center;
+}
+#my-word li {
+    font-size: 25px;
+    margin: 0 5px;
+}
+#mylives {
+    color: brown;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#clue {
+    color: green;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
