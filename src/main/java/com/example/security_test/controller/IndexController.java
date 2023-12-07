@@ -78,5 +78,32 @@ public class IndexController {
         return "profile";
     }
 
+    //테트리스
+    @GetMapping("/block")
+    public String block(){
+        return "tetris";
+    }
+
+    //행맨
+    @GetMapping("/hangman")
+    public String hangman(){ return "hangman";}
+    //유튜브 동영상 플레이어
+    @GetMapping("/YTplayer")
+    public String YTplayer(){ return "esv";}
+
+    @GetMapping("/first")
+    public String first() {
+        return "esv";
+    }
+    @GetMapping("/second")
+    public String second() {
+        return "tetris";
+    }
+    @GetMapping("/third")
+    public String third() {
+        return "hangman";
+    }
+
+
 
 }
