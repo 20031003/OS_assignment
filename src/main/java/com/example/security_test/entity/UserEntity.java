@@ -46,7 +46,7 @@ public class UserEntity {
     private String bio;
 
 
-    public void emailCheck() {
+    /*public void emailCheck() {
         this.emailVerified = true;
     }
 
@@ -57,5 +57,5 @@ public class UserEntity {
     public boolean canSendEmail() {
         return this.createDate.toLocalDateTime().isBefore(LocalDateTime.now().minusHours(1));
 
-    }
+    }*/
 }

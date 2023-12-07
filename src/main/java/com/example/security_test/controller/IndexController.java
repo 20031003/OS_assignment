@@ -30,4 +30,11 @@ public class IndexController {
         return "index";
     }
 
+    @GetMapping("/loginForm")
+    public String loginForm() {
+
+        return "loginForm";
+    }
+
+
 }
