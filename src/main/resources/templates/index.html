@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<div th:replace="~{layouts/header :: header}"></div>
+
+
+<div th:replace="~{layouts/nav :: nav}"></div>
+
+
+
+<div class="alert alert-warning" role="alert" th:if="${userEntity != null && !userEntity.emailVerified}">
+    가입을 완료하려면 <a href="#" th:href="@{/check-email}" class="alert-link">계정 인증 이메일을 확인하세요</a>
+</div>
+
+<div class="parent" sec:authorize="isAuthenticated()">
+    <a class="first" th:href="first">
+
+    </a>
+    <a class="second" th:href="second">
+
+    </a>
+    <a class="third" th:href="third">
+
+    </a>
+</div>
+
+<div th:replace="~{layouts/footer :: footer}"></div>
